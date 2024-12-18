@@ -10,6 +10,20 @@
     <div class="container">
         <h1 class="title">1A2B Guessing Game</h1>
 
+        <!-- 游戏规则 -->
+        <div id="rules">
+            <p>Rules:</p>
+            <ul>
+                <li>Guess a number consisting of unique characters.</li>
+                <li>The system will return feedback in the format XAYB:</li>
+                <ul>
+                    <li>X (A) - The number of digits that are correct and in the correct position.</li>
+                    <li>Y (B) - The number of digits that are correct but in the wrong position.</li>
+                </ul>
+                <li>Example: If the answer is "1234" and you guess "1243", the feedback will be 2A2B.</li>
+            </ul>
+        </div>
+
         <!-- 主题切换和全屏按钮 -->
         <div id="themeSwitcher">
             <label for="themeSelect">Theme:</label>
@@ -41,3 +55,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

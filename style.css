@@ -32,6 +32,24 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+#rules {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#rules p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#rules ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
 #themeSwitcher {
     position: absolute;
     top: 10px;
@@ -67,18 +85,24 @@ body {
 }
 
 #gameArea {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 #newGameBtn {
     position: absolute;
-    bottom: -5px;
+    bottom: -5px; /* 向下偏移 5px */
     left: 50%;
     transform: translateX(-50%);
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
-.ball {
-    position: absolute;
-    border-radius: 50%;
-    animation: bounce 3s infinite linear;
+#newGameBtn:hover {
+    background-color: #218838;
 }
+
