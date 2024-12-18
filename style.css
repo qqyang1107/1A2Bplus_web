@@ -85,7 +85,8 @@ body {
 }
 
 #newGameBtnWrapper {
-    margin-top: 20px; /* 将新游戏按钮与其他区域分隔 */
+    margin-top: 20px; /* 调整按钮与其他元素的距离 */
+    text-align: center; /* 居中按钮 */
 }
 
 #newGameBtn {
@@ -96,6 +97,8 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    position: relative; /* 移除绝对定位，避免覆盖 */
+    z-index: 1; /* 确保按钮不会堆叠在其他元素上 */
 }
 
 #newGameBtn:hover {
