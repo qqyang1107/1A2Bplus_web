@@ -1,0 +1,84 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --title-gradient: linear-gradient(to right, gray, darkgray);
+}
+
+[data-theme="dark"] {
+    --bg-color: black;
+    --text-color: white;
+    --title-gradient: linear-gradient(to right, lightgray, white);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 2rem;
+    background-clip: text; /* 标准属性 */
+    -webkit-background-clip: text; /* 为旧版浏览器提供支持 */ 
+    -webkit-text-fill-color: transparent;
+}
+
+#themeSwitcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+#fullscreenToggle {
+    margin-top: 5px;
+    display: block;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#fullscreenToggle:hover {
+    background-color: #0056b3;
+}
+
+#creatorName {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: linear-gradient(to right, orange, darkorange);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    animation: none; /* 取消移动动画 */
+}
+
+#gameArea {
+    margin-top: 100px;
+}
+
+#newGameBtn {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ball {
+    position: absolute;
+    border-radius: 50%;
+    animation: bounce 3s infinite linear;
+}

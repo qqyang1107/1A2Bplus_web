@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1A2B Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">1A2B Guessing Game</h1>
+
+        <!-- 主题切换和全屏按钮 -->
+        <div id="themeSwitcher">
+            <label for="themeSelect">Theme:</label>
+            <select id="themeSelect" onchange="switchTheme()">
+                <option value="auto">Auto</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+            <button id="fullscreenToggle" onclick="toggleFullscreen()">Toggle Fullscreen</button>
+        </div>
+
+        <!-- 制作者名称 -->
+        <p id="creatorName">Designed by qqyang1107</p>
+
+        <!-- 游戏区域 -->
+        <div id="gameArea">
+            <label for="digitSelect">Select digits: </label>
+            <select id="digitSelect" onchange="updateDigits()"></select>
+            <p>Guess the <span id="digitLength">4</span>-character number (Base 32).</p>
+            <input type="text" id="guessInput" placeholder="Enter your guess here">
+            <button onclick="submitGuess()">Submit Guess</button>
+            <div class="log" id="log"></div>
+            <div id="winMessage" class="win-message"></div>
+        </div>
+
+        <!-- 开始新游戏按钮 -->
+        <button id="newGameBtn" onclick="startNewGame()">Start New Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
