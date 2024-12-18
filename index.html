@@ -12,13 +12,13 @@
 
         <!-- 游戏规则 -->
         <div id="rules">
-            <p>Rules:</p>
+            <h2>Rules:</h2>
             <ul>
                 <li>Guess a number consisting of unique characters.</li>
                 <li>The system will return feedback in the format XAYB:</li>
                 <ul>
-                    <li>X (A) - The number of digits that are correct and in the correct position.</li>
-                    <li>Y (B) - The number of digits that are correct but in the wrong position.</li>
+                    <li>X (A): Number of digits correct and in the correct position.</li>
+                    <li>Y (B): Number of digits correct but in the wrong position.</li>
                 </ul>
                 <li>Example: If the answer is "1234" and you guess "1243", the feedback will be 2A2B.</li>
             </ul>
@@ -50,7 +50,9 @@
         </div>
 
         <!-- 开始新游戏按钮 -->
-        <button id="newGameBtn" onclick="startNewGame()">Start New Game</button>
+        <div id="newGameBtnWrapper">
+            <button id="newGameBtn" onclick="startNewGame()">Start New Game</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

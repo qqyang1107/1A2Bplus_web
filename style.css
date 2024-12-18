@@ -16,8 +16,6 @@ body {
     font-family: Arial, sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    overflow: hidden;
-    position: relative;
 }
 
 .container {
@@ -33,15 +31,14 @@ body {
 }
 
 #rules {
-    text-align: left;
     margin: 20px auto;
     max-width: 600px;
+    text-align: left;
     font-size: 1rem;
     line-height: 1.5;
 }
 
-#rules p {
-    font-weight: bold;
+#rules h2 {
     margin-bottom: 10px;
 }
 
@@ -81,18 +78,17 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 0.9rem;
-    animation: none; /* 取消移动动画 */
 }
 
 #gameArea {
     margin-top: 20px;
 }
 
+#newGameBtnWrapper {
+    margin-top: 20px; /* 将新游戏按钮与其他区域分隔 */
+}
+
 #newGameBtn {
-    position: absolute;
-    bottom: -5px; /* 向下偏移 5px */
-    left: 50%;
-    transform: translateX(-50%);
     background-color: #28a745;
     color: white;
     border: none;
@@ -105,4 +101,5 @@ body {
 #newGameBtn:hover {
     background-color: #218838;
 }
+
 
