@@ -29,6 +29,13 @@ body {
     -webkit-background-clip: text; /* 为旧版浏览器提供支持 */ 
     -webkit-text-fill-color: transparent;
 }
+#gameTitle {
+    color: var(--text-color, white); /* 根據主題變化 */
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
 
 #rules {
     margin: 20px auto;
@@ -90,16 +97,20 @@ body {
 }
 
 #newGameBtn {
-    background-color: #28a745;
+    position: absolute;
+    top: 10%; /* 放置在銀幕中上方 */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745; /* 綠色背景 */
     color: white;
-    border: none;
-    padding: 10px 20px;
+    font-size: 0.9rem; /* 縮小按鈕字體大小 */
+    padding: 5px 10px; /* 縮小內邊距 */
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
-    position: relative; /* 移除绝对定位，避免覆盖 */
-    z-index: 1; /* 确保按钮不会堆叠在其他元素上 */
+    border: none;
+    z-index: 10;
 }
+
 
 #newGameBtn:hover {
     background-color: #218838;
