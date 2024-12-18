@@ -25,10 +25,10 @@ body {
 
 .title {
     font-size: 2rem;
-    background-clip: text; /* 标准属性 */
-    -webkit-background-clip: text; /* 为旧版浏览器提供支持 */ 
-    -webkit-text-fill-color: transparent;
+    color: var(--text-color); /* 使用主题色文本 */
+    text-align: center;
 }
+
 #gameTitle {
     color: var(--text-color, white); /* 根據主題變化 */
     text-align: center;
@@ -87,7 +87,7 @@ body {
     font-size: 0.9rem;
 }
 #submitGuessBtn {
-    background-color: #28a745; /* 綠色背景 */
+    background-color: #28a745; /* 绿色背景 */
     color: white;
     border: none;
     padding: 5px 10px;
@@ -97,8 +97,9 @@ body {
 }
 
 #submitGuessBtn:hover {
-    background-color: #218838; /* 按鈕懸停時顏色變深 */
+    background-color: #218838; /* 按钮悬停时的深绿色 */
 }
+
 
 #gameArea {
     margin-top: 20px;
@@ -111,18 +112,19 @@ body {
 
 #newGameBtn {
     position: absolute;
-    top: 10%; /* 放置在銀幕中上方 */
+    top: 10%; /* 保持在屏幕中上方 */
     left: 50%;
     transform: translateX(-50%);
     background-color: #28a745; /* 綠色背景 */
     color: white;
-    font-size: 0.9rem; /* 縮小按鈕字體大小 */
-    padding: 5px 10px; /* 縮小內邊距 */
+    font-size: 0.9rem; /* 字体稍小 */
+    padding: 5px 10px; /* 边距 */
     border-radius: 5px;
     cursor: pointer;
     border: none;
-    z-index: 10;
+    z-index: 1; /* 确保不会遮挡其他内容 */
 }
+
 
 
 #newGameBtn:hover {
